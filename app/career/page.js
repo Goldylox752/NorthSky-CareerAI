@@ -1,275 +1,230 @@
 import Link from "next/link";
 
+
 export const metadata = {
-  title: "Byron Sanche | Career Portfolio & Professional Journey",
+
+  title:
+    "Careers | Join Our Team",
+
   description:
-    "Explore Byron Sanche's career journey across telecommunications, fiber optics, AI software development, SaaS products, and technology entrepreneurship.",
+    "Explore career opportunities, open positions, and join a team building innovative technology solutions.",
+
 };
 
 
-export default function CareerPage() {
 
-  return (
+export default function CareersPage(){
 
-    <main className="min-h-screen bg-slate-950 text-white">
+return (
 
+<main className="min-h-screen bg-slate-950 text-white">
 
-      {/* HERO */}
 
-      <section className="px-6 py-24 text-center max-w-5xl mx-auto">
+{/* HERO */}
 
-        <h1 className="text-5xl md:text-7xl font-bold">
-          Building The Future Through
-          <span className="text-blue-400">
-            {" "}Technology & Innovation
-          </span>
-        </h1>
+<section className="max-w-6xl mx-auto px-6 py-24 text-center">
 
 
-        <p className="mt-8 text-xl text-gray-300">
+<h1 className="text-5xl md:text-7xl font-bold">
 
-          I'm Byron Sanche — a telecommunications technician,
-          fiber optic specialist, and software developer building
-          AI-powered platforms, automation systems, and digital products.
+Build The Future
+<span className="text-blue-400">
+{" "}With Us
+</span>
 
-        </p>
+</h1>
 
 
-        <div className="mt-10 flex justify-center gap-5 flex-wrap">
+<p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
 
+Join a team of creators, engineers, designers, and problem solvers
+working on innovative technology, AI, software, and digital products.
 
-          <Link
-            href="/projects"
-            className="bg-blue-600 px-8 py-3 rounded-xl hover:bg-blue-700"
-          >
-            View Projects
-          </Link>
+</p>
 
 
-          <Link
-            href="/contact"
-            className="border border-gray-600 px-8 py-3 rounded-xl hover:bg-white hover:text-black"
-          >
-            Contact Me
-          </Link>
+<Link
 
+href="/careers/jobs"
 
-        </div>
+className="inline-block mt-10 bg-blue-600 px-8 py-4 rounded-xl hover:bg-blue-700"
 
+>
 
-      </section>
+View Open Positions
 
+</Link>
 
 
+</section>
 
-      {/* ABOUT */}
 
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
 
 
-        <div>
 
-          <h2 className="text-3xl font-bold mb-5">
-            My Journey
-          </h2>
+{/* WHY JOIN */}
 
+<section className="bg-slate-900 py-20">
 
-          <p className="text-gray-300 leading-relaxed">
 
-            My career began in telecommunications and fiber optics,
-            working on FTTH installations, underground utilities,
-            splicing, testing, and network infrastructure projects.
+<div className="max-w-6xl mx-auto px-6">
 
-            <br /><br />
 
-            Today I combine my technical field experience with
-            software development to create AI tools, SaaS platforms,
-            and automation systems that solve real business problems.
+<h2 className="text-4xl font-bold text-center mb-12">
 
-          </p>
+Why Join Us?
 
-        </div>
+</h2>
 
 
 
-        <div className="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+<div className="grid md:grid-cols-3 gap-8">
 
 
-          <h3 className="text-2xl font-semibold mb-6">
-            Core Skills
-          </h3>
+<Card
 
+title="Innovation"
 
-          <ul className="space-y-3 text-gray-300">
+text="Work on modern technology, AI solutions, and products that impact real businesses."
 
-            <li>✓ Fiber Optics & Telecommunications</li>
+/>
 
-            <li>✓ FTTH Installation & OTDR Testing</li>
 
-            <li>✓ Next.js / React Development</li>
+<Card
 
-            <li>✓ AI Application Development</li>
+title="Growth"
 
-            <li>✓ SaaS Architecture</li>
+text="Develop your skills through challenging projects, mentorship, and collaboration."
 
-            <li>✓ Supabase & Cloud Platforms</li>
+/>
 
-            <li>✓ Automation Systems</li>
 
-          </ul>
+<Card
 
+title="Remote Friendly"
 
-        </div>
+text="Work with talented people from anywhere while building meaningful products."
 
+/>
 
-      </section>
 
+</div>
 
 
+</div>
 
 
-      {/* EXPERIENCE */}
+</section>
 
 
-      <section className="px-6 py-20 bg-slate-900">
 
 
-        <div className="max-w-6xl mx-auto">
 
 
-          <h2 className="text-4xl font-bold mb-12">
-            Professional Experience
-          </h2>
+{/* DEPARTMENTS */}
 
 
+<section className="max-w-6xl mx-auto px-6 py-20">
 
-          <div className="grid md:grid-cols-3 gap-8">
 
+<h2 className="text-4xl font-bold mb-10">
 
+Teams Hiring
 
-            <CareerCard
-              title="Telecommunications Technician"
-              company="Fiber Optics & Network Infrastructure"
-              description="
-              FTTH deployments, fiber termination,
-              testing, troubleshooting, and underground
-              utility support.
-              "
-            />
+</h2>
 
 
 
-            <CareerCard
-              title="AI Software Developer"
-              company="SaaS & Automation Platforms"
-              description="
-              Building AI-powered applications,
-              business automation tools, and modern
-              web platforms.
-              "
-            />
+<div className="grid md:grid-cols-2 gap-6">
 
 
+<Job
 
-            <CareerCard
-              title="Technology Entrepreneur"
-              company="Sanche Solutions"
-              description="
-              Creating digital products that help
-              businesses generate leads, automate
-              workflows, and grow online.
-              "
-            />
+title="Software Engineering"
 
+description="Frontend, backend, cloud, AI, and full-stack development roles."
 
-          </div>
+/>
 
 
-        </div>
+<Job
 
+title="Design"
 
-      </section>
+description="Create beautiful user experiences, interfaces, and product designs."
 
+/>
 
 
+<Job
 
+title="Marketing"
 
+description="Grow our brand through content, SEO, partnerships, and campaigns."
 
-      {/* PROJECTS */}
+/>
 
 
-      <section className="max-w-6xl mx-auto px-6 py-20">
+<Job
 
+title="Operations"
 
-        <h2 className="text-4xl font-bold mb-10">
-          Featured Projects
-        </h2>
+description="Help manage projects, customers, and business operations."
 
+/>
 
 
-        <div className="grid md:grid-cols-3 gap-8">
+</div>
 
 
+</section>
 
-          <ProjectCard
-            name="RoofFlow OS"
-            description="AI-powered roofing lead generation and automation platform."
-          />
 
 
 
-          <ProjectCard
-            name="Halo Marketplace"
-            description="Modern marketplace platform powered by Next.js and Supabase."
-          />
 
 
+{/* OPEN APPLICATION */}
 
-          <ProjectCard
-            name="NorthSky Reviews"
-            description="AI software reviews and technology discovery platform."
-          />
 
+<section className="bg-blue-600 py-20 text-center">
 
-        </div>
 
+<h2 className="text-4xl font-bold">
 
-      </section>
+Don't See Your Role?
 
+</h2>
 
 
+<p className="mt-4 text-lg">
 
+Send us your resume. We are always looking for talented people.
 
-      {/* CTA */}
+</p>
 
-      <section className="text-center px-6 py-20 bg-blue-600">
 
 
-        <h2 className="text-4xl font-bold">
-          Looking For Collaboration?
-        </h2>
+<Link
 
+href="/careers/apply"
 
-        <p className="mt-4 text-lg">
-          Let's build innovative technology solutions together.
-        </p>
+className="inline-block mt-8 bg-white text-black px-8 py-3 rounded-xl"
 
+>
 
-        <Link
-          href="/contact"
-          className="inline-block mt-8 bg-white text-black px-8 py-3 rounded-xl"
-        >
-          Start A Conversation
-        </Link>
+Submit Application
 
+</Link>
 
-      </section>
 
+</section>
 
 
-    </main>
 
-  );
+</main>
+
+);
 
 }
 
@@ -277,66 +232,76 @@ export default function CareerPage() {
 
 
 
-function CareerCard({
-  title,
-  company,
-  description
-}) {
+
+
+function Card({title,text}){
 
 return (
 
-<div className="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+<div className="bg-slate-950 border border-slate-800 p-8 rounded-2xl">
+
+<h3 className="text-2xl font-bold">
+
+{title}
+
+</h3>
+
+
+<p className="text-gray-400 mt-4">
+
+{text}
+
+</p>
+
+
+</div>
+
+)
+
+}
+
+
+
+
+
+
+
+function Job({title,description}){
+
+return (
+
+<div className="bg-slate-900 border border-slate-800 p-6 rounded-xl">
 
 
 <h3 className="text-xl font-bold">
+
 {title}
+
 </h3>
 
 
-<p className="text-blue-400 mt-2">
-{company}
-</p>
+<p className="text-gray-400 mt-2">
 
-
-<p className="text-gray-400 mt-4">
 {description}
+
 </p>
+
+
+<Link
+
+href="/careers/jobs"
+
+className="inline-block mt-4 text-blue-400"
+
+>
+
+Explore Roles →
+
+</Link>
 
 
 </div>
 
 )
-
-}
-
-
-
-
-
-function ProjectCard({
-name,
-description
-}) {
-
-
-return (
-
-<div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-
-
-<h3 className="text-2xl font-bold">
-{name}
-</h3>
-
-
-<p className="text-gray-400 mt-4">
-{description}
-</p>
-
-
-</div>
-
-)
-
 
 }
